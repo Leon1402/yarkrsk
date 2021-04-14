@@ -89,7 +89,8 @@ button {cursor: pointer;}
   background-image: url(images/5.jpg);
   background-position: center;
 }
-.swiper-slide-6 {background-image: url(images/1.jpg);}
+.swiper-slide-6 {background-image: url(images/6.jpg);}
+.swiper-slide-7 {background-image: url(images/6.jpg);}
 
 
 .swiper-button-prev,
@@ -206,31 +207,28 @@ button {cursor: pointer;}
 }
 
 .messegers {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.social__link {font-size: 25px;}
+.social__link {
+  font-size: 30px;
+}
 
-.social__item:not(:last-child) {margin-right: 10px;}
+.social__item:not(:last-child) {margin-right: 15px;}
 
 .social__link_whatsapp {color: #25D366;}
-
 .social__link_viber {color: #7360f2;}
-
 .social__link_telegram {color: #0088CC;}
-
 .social__link_vk {color: #2787F5;}
-
 .social__link_facebook {color: #3b5998;}
-
 .social__link_twitter {color: #00ACEE;}
-
 .social__link_odnoklassniki {color: #ED812B;}
-
 .social__link_pinterest {color: #E60023;}
-
 .social__link_yandex {color: #ff0000;}
 
+.social__link:hover .fab {
+  animation: anim .5s ease-out infinite alternate;
+}
 
 .fab.fa-instagram {
   color: transparent;
@@ -241,18 +239,27 @@ button {cursor: pointer;}
 }
 
 @media screen and (max-width: 1024px) {
+  .swiper-container {
+    height: 600px;
+  }
+
   .hero-slides__title {
     font-size: 25px 
   } 
 }
 
 @media screen and (max-width: 768px) {
-  .swiper-container {
-    height: 650px;
-  }
-
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
   }
 }
