@@ -94,9 +94,17 @@ button {cursor: pointer;}
 .swiper-button-prev:after,
 .swiper-button-next:after {content: '';}
 
+.swiper-button-prev:after {
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(45deg);
+}
+
 .swiper-button-next.swiper-button-disabled, 
 .swiper-button-prev.swiper-button-disabled {
-  opacity: 0;
+  opacity: 1;
 }
 
 .hero-slides__link {

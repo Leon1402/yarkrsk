@@ -3,6 +3,10 @@ const swiper = new Swiper('.swiper-container', {
     spaceBetween: 5,
     allowTouchMove: true,
     lazy: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
     breakpoints: {
         480: {
             slidesPerView: 2,
