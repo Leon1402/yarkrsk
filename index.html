@@ -6,8 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -46,63 +49,38 @@
         <div class="swiper-wrapper hero-slides">
           <div class="swiper-slide swiper-slide-1">
             <a href="update.html" class="hero-slides__link"></a>
-            <div class="hero-slides__title">
-              <img src="" alt="Лого" class="hero-slides__logo">
-              <h2 class="hero-slides__title-text">СПЕЦТЕХ ЯР</h2>
-            </div>
-            <h3 class="hero-slides__text">
-              АРЕНДА СПЕЦТЕХНИКИ
-            </h3>
+            <h2 class="hero-slides__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
+            <button class="hero-slides__button">ПОДРОБНЕЕ</button>
           </div>
+
           <div class="swiper-slide swiper-slide-2">
             <a href="update.html" class="hero-slides__link"></a>
-            <div class="hero-slides__title">
-              <img src="" alt="Лого" class="hero-slides__logo">
-              <h2 class="hero-slides__title-text">ИНЕРТ ЯР</h2>
-            </div>
-            <h3 class="hero-slides__text">
-              ДОСТАВКА ИНЕРТНЫХ МАТЕРИАЛОВ
-            </h3>
+              <h2 class="hero-slides__title">ДОСТАВКА ИНЕРТНЫХ МАТЕРИАЛОВ</h2>
+              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
           </div>
+
           <div class="swiper-slide swiper-slide-3">
             <a href="update.html" class="hero-slides__link"></a>
-            <div class="hero-slides__title">
-              <img src="" alt="Лого" class="hero-slides__logo">
-              <h2 class="hero-slides__title-text">ТОПЛИВО ЯР</h2>
-            </div>
-            <h3 class="hero-slides__text">
-              ДОСТАВКА ТОПЛИВА
-            </h3>
+              <h2 class="hero-slides__title">ДОСТАВКА ТОПЛИВА</h2>
+              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
           </div>
+
           <div class="swiper-slide swiper-slide-4">
             <a href="update.html" class="hero-slides__link"></a>
-            <div class="hero-slides__title">
-              <img src="" alt="Лого" class="hero-slides__logo">
-              <h2 class="hero-slides__title-text">СПЕЦТЕХ ЯР</h2>
-            </div>
-            <h3 class="hero-slides__text">
-              АРЕНДА СПЕЦТЕХНИКИ
-            </h3>
+              <h2 class="hero-slides__title">ДОСТАВКА МЕТАЛЛА</h2>
+              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
           </div>
+
           <div class="swiper-slide swiper-slide-5">
             <a href="update.html" class="hero-slides__link"></a>
-            <div class="hero-slides__title">
-              <img src="" alt="Лого" class="hero-slides__logo">
-              <h2 class="hero-slides__title-text">СПЕЦТЕХ ЯР</h2>
-            </div>
-            <h3 class="hero-slides__text">
-              АРЕНДА СПЕЦТЕХНИКИ
-            </h3>
+              <h2 class="hero-slides__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
+              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
           </div>
+
           <div class="swiper-slide swiper-slide-6">
             <a href="update.html" class="hero-slides__link"></a>
-            <div class="hero-slides__title">
-              <img src="" alt="Лого" class="hero-slides__logo">
-              <h2 class="hero-slides__title-text">СПЕЦТЕХ ЯР</h2>
-            </div>
-            <h3 class="hero-slides__text">
-              АРЕНДА СПЕЦТЕХНИКИ
-            </h3>
+              <h2 class="hero-slides__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
+              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
           </div>
         </div>
 
@@ -117,15 +95,16 @@
       <button class="aboutus__button">
         ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
       </button>
+      <h3 class="aboutus__title">НАШИ КОНТАКТЫ</h3>
       <ul class="aboutus__contacts contacts">
         <li class="contacts__item">
           <a href="tel:+79632643969" class="contacts__link contacts__link_phone">+7 963 264-39-69</a>
         </li>
         <li class="contacts__item">
-          <a href="mailto:mail@mail.ru" class="contacts__link contacts__link_mail">mail@mail.ru</a>
+          <a href="mailto:yarkrsk@mail.ru" class="contacts__link contacts__link_mail">yarkrsk@mail.ru</a>
         </li>
       </ul>
-      <ul class="aboutus__social social">
+      <ul class="aboutus__social social messegers">
         <li class="social__item">
           <a href="" class="social__link social__link_whatsapp">
             <i class="fab fa-whatsapp"></i>
@@ -137,8 +116,46 @@
           </a>
         </li>
         <li class="social__item">
+          <a href="" class="social__link social__link_telegram">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="aboutus__social social">
+        <li class="social__item">
+          <a href="" class="social__link social__link_vk">
+            <i class="fab fa-vk"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link_facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="social__item">
           <a href="" class="social__link social__link_instagram">
             <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link_twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link_odnoklassniki">
+            <i class="fab fa-odnoklassniki"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link_pinterest">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link_yandex">
+            <i class="fab fa-yandex"></i>
           </a>
         </li>
       </ul>
