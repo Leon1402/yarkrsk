@@ -125,7 +125,8 @@ button {cursor: pointer;}
 .header__container {
   position: relative;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__list {
@@ -382,8 +383,8 @@ button {cursor: pointer;}
   text-transform: none;
   position: absolute;
   bottom: 100%;
-  left: -50%;
-  width: 350px;
+  right: 20%;
+  width: 200px;
   padding: 10px;
   background-color: #fff;
   text-indent: 0;
@@ -531,6 +532,10 @@ button {cursor: pointer;}
     right: 20%;
     top: 0;
     width: 100%;
+  }
+
+  .header__location {
+    font-size: 12px;
   }
 }
 
