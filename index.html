@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,12 +24,48 @@
 <body>
   <header class="header">
     <div class="container header__container">
+      <div class="header__location">
+        <i class="fas fa-map-marker-alt"></i>
+        Красноярск
+        <i class="fas fa-mobile-alt"></i>
+        <a href="tel:+79632643969" class="contacts__link contacts__link_phone">8 (963) 264-39-69</a>
+      </div>
+      <button class="header__burger burger" aria-label="Открыть меню">
+        <span class="burger__item"></span>
+      </button>
       <nav class="header__nav">
         <ul class="header__list list">
-          <li class="header__item">HOME</li>
-          <li class="header__item">ABOUT US</li>
-          <li class="header__item">OUR SERVICES</li>
-          <li class="header__item">CONTACT</li>
+          <button class="header__close">
+            X
+          </button>
+          <li class="header__item">
+            <a href="#top" class="header__link">ГЛАВНАЯ</a>
+          </li>
+          <li class="header__item">
+            <a href="#aboutus" class="header__link">О НАС</a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">КОНТАКТЫ</a>
+          </li>
+          <li class="header__item services">
+            <div href="" class="header__link ">УСЛУГИ</div>
+            <ul class="services__list">
+              <li class="services__item">Воплощение функций генерального подрядчика</li>
+              <li class="services__item">Доставка инертных материалов с собственного карьера</li>
+              <li class="services__item">Комплексное обеспечение спецтехникой</li>
+              <li class="services__item">Комплектация строительных объектов материалами</li>
+              <li class="services__item">Оптовая доставка топлива</li>
+              <li class="services__item">Сервис по ремонту и обслуживанию спецтехники</li>
+              <li class="services__item">Грузоперевозки тралами</li>
+              <li class="services__item">Оптовые и розничные поставки металлопроката</li>
+            </ul>
+          </li>
+          <li class="header__item bank">
+            <div href="" class="header__link header__link_bank">БАНКОВСКАЯ ГАРАНТИЯ</div>
+            <p class="bank__list">
+              Получите банковскую гарантию на выгодных условиях: <br>8 (963) 264-39-69
+            </p>
+          </li>
         </ul>
       </nav>
     </div>
@@ -39,7 +74,7 @@
   <section class="hero">
     <div class="container hero__container">
       <div class="hero__title">
-        <img src="" alt="Логотип" class="hero__logo">
+        <!-- <img src="" alt="Логотип" class="hero__logo"> -->
         <h1 class="hero__title-text">
           ЯР ХОЛДИНГ
         </h1>
@@ -48,61 +83,105 @@
       <div class="swiper-container">
         <div class="swiper-wrapper hero-slides">
           <div class="swiper-slide swiper-slide-1">
-            <a href="update.html" class="hero-slides__link"></a>
-            <h2 class="hero-slides__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
-            <button class="hero-slides__button">ПОДРОБНЕЕ</button>
-          </div>
-
-          <div class="swiper-slide swiper-slide-2">
-            <a href="update.html" class="hero-slides__link"></a>
-              <h2 class="hero-slides__title">ДОСТАВКА ИНЕРТНЫХ МАТЕРИАЛОВ</h2>
-              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
+            <h2 class="hero-slides__title">АРЕНДА<br>ТЕХНИКИ</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
           </div>
 
           <div class="swiper-slide swiper-slide-3">
-            <a href="update.html" class="hero-slides__link"></a>
-              <h2 class="hero-slides__title">ДОСТАВКА ТОПЛИВА</h2>
-              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
+            <h2 class="hero-slides__title">ДОСТАВКА<br>ТОПЛИВА</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
+          </div>
+
+          <div class="swiper-slide swiper-slide-2">
+            <h2 class="hero-slides__title">ИНЕРТНЫЕ<br>МАТЕРИАЛЫ</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
           </div>
 
           <div class="swiper-slide swiper-slide-4">
-            <a href="update.html" class="hero-slides__link"></a>
-              <h2 class="hero-slides__title">ДОСТАВКА МЕТАЛЛА</h2>
-              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
+            <h2 class="hero-slides__title">ДОСТАВКА<br>МЕТАЛЛА</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
           </div>
 
           <div class="swiper-slide swiper-slide-5">
-            <a href="update.html" class="hero-slides__link"></a>
-              <h2 class="hero-slides__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
-              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
+            <h2 class="hero-slides__title">РЕМОНТНЫЙ<br>СЕРВИС</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
           </div>
 
           <div class="swiper-slide swiper-slide-6">
-            <a href="update.html" class="hero-slides__link"></a>
-              <h2 class="hero-slides__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
-              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
+            <h2 class="hero-slides__title">ПЕРЕВОЗКИ<br>ТРАЛОМ</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
           </div>
 
           <div class="swiper-slide swiper-slide-7">
-            <a href="update.html" class="hero-slides__link"></a>
-              <h2 class="hero-slides__title">АРЕНДА СПЕЦТЕХНИКИ</h2>
-              <button class="hero-slides__button">ПОДРОБНЕЕ</button>
+            <h2 class="hero-slides__title">УСЛУГИ<br>ГЕНПОДРЯДА</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
+          </div>
+
+          <div class="swiper-slide swiper-slide-8">
+            <h2 class="hero-slides__title">СТРОИТЕЛЬНЫЕ<br>МАТЕРИАЛЫ</h2>
+            <a href="update.html" class="hero-slides__button">ПОДРОБНЕЕ</a>
           </div>
         </div>
 
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
+      <button class="hero__button">
+        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+      </button>
     </div>
   </section>
 
-  <section class="aboutus">
+  <div class="modal">
+    <form class="modal__content modal-form" method="POST" action="">
+      <button class="modal__close">X</button>
+      <div class="modal__block">
+        <label class="modal__label modal__label_fio">
+          <div>ФИО*</div>
+          <input type="text" class="modal__input modal__input_text" required name="name">
+        </label>
+        <label class="modal__label">
+          <div>Телефон*</div>
+          <input type="tel" class="modal__input modal__input_tel" required name="tel">
+        </label>
+      </div>
+      <label class="modal__label modal__label_textarea">
+        Примечания
+        <textarea class="modal__input modal__textarea" placeholder="Укажите место проведения работ"></textarea>
+      </label class="modal__label">
+      <label class="modal__checkbox checkbox">
+        <input type="checkbox" class="checkbox__input" required>
+        даю согласие на обработку и хранение персональных данных
+        <span class="checkbox__check"></span>
+      </label>
+      <p class="modal__text">
+        * - поля, обязательные для заполнения
+      </p>
+      <button class="modal__button">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+
+  <section class="aboutus" id="aboutus">
     <div class="container aboutus__container">
-      <button class="aboutus__button">
-        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-      </button>
+      <h2 class="aboutus__main-title">О НАС</h2>
+      <p class="aboutus_main-text">
+        <b>«ЯР ХОЛДИНГ»</b> - стремительно развивающееся, надежное и выгодное строительное сообщество. С нами Вы можете воплотить в жизнь абсолютный ансамбль производственных работ в Красноярске и Красноярском Крае.
+      </p>
+      <p class="aboutus_main-text">
+        <b>В наш холдинг входит</b>  восемь специализированных подразделений из разных областей. Каждое подразделение состоит из коллектива профессионалов в своей области, которые сплотились воедино одной целью: своевременное и успешное решение поставленных задач заказчиком.
+      </p>
+      <p class="aboutus_main-text">
+        <b>Среди них-</b> воплощение функций генерального подрядчика, собственный карьер инертных материалов, комплексное обеспечение спецтехникой, комплектация строительных объектов материалами, оптовая доставка топлива, сервис по ремонту и обслуживанию спецтехники, грузоперевозки тралами, оптовые и розничные поставки металлопроката.
+      </p>
+      <p class="aboutus_main-text">
+        <b>Осуществляем финансовый старт,</b> предоставляем <b class="bank-text"><span class="tooltip">Получите банковскую гарантию на выгодных условиях: 8 (963) 264-39-69</span>банковские гарантии
+        </b> на обеспечение исполнения обязательств по контрактам компаний.
+      </p>
+      <p class="aboutus_main-text">
+        <b>Гарантируем</b> предоставление лучших условий сотрудничества: экономически обоснованные и технически грамотные решения при строгом соблюдении договорных обязательств
+      </p>
       <h3 class="aboutus__title">НАШИ КОНТАКТЫ</h3>
-      <ul class="aboutus__contacts contacts">
+      <ul class="aboutus__contacts contacts" id="contacts">
         <li class="contacts__item">
           <a href="tel:+79632643969" class="contacts__link contacts__link_phone">+7 963 264-39-69</a>
         </li>
@@ -112,12 +191,12 @@
       </ul>
       <ul class="aboutus__social social messegers">
         <li class="social__item">
-          <a href="" class="social__link social__link_whatsapp">
+          <a href="https://wa.me/79632643969"" class="social__link social__link_whatsapp">
             <i class="fab fa-whatsapp"></i>
           </a>
         </li>
         <li class="social__item">
-          <a href="" class="social__link social__link_viber">
+          <a href="viber://chat?number=79632643969" class="social__link social__link_viber">
             <i class="fab fa-viber"></i>
           </a>
         </li>
