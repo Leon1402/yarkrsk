@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 5,
     allowTouchMove: true,
-
+    lazy: true,
     breakpoints: {
         480: {
             slidesPerView: 2,
