@@ -185,6 +185,7 @@ button {cursor: pointer;}
 .swiper-container {
   width: 100%;
   height: 700px;
+  padding: 5px;
   margin-bottom: 20px;
   background-color: #fff;
   color: #fff;
