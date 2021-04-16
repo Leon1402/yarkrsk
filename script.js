@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper-container', {
 
     slidesPerView: 3,
-    // spaceBetween: 5,
+    spaceBetween: 5,
     direction: 'vertical',
     allowTouchMove: true,
     lazy: true,
