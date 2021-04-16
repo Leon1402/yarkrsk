@@ -1,19 +1,18 @@
 const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 5,
+
+    slidesPerView: 3,
+    // spaceBetween: 5,
+    direction: 'vertical',
     allowTouchMove: true,
-    loop: true,
     lazy: true,
+    loop: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
     breakpoints: {
-        480: {
-            slidesPerView: 2,
-            allowTouchMove: true,
-        },
         768: {
+        direction: 'horizontal',
             slidesPerView: 3,
             allowTouchMove: false,
         }
