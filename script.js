@@ -5,6 +5,7 @@ const swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     allowTouchMove: true,
     lazy: true,
+    loop: false,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
