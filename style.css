@@ -194,7 +194,6 @@ button {cursor: pointer;}
 .swiper-slide {
   align-items: center;
   position: relative;
-  min-height: 100px;
   padding: 5px;
   text-align: center;
   background-position: left center;
@@ -286,6 +285,7 @@ button {cursor: pointer;}
 .swiper-slide-6 {background-image: url(images/6.jpg);}
 .swiper-slide-7 {background-image: url(images/7.jpg);}
 .swiper-slide-8 {background-image: url(images/8.jpg);}
+.swiper-slide-9 {background-image: url(images/9.jpg);}
 
 
 .swiper-button-prev,
@@ -332,13 +332,14 @@ button {cursor: pointer;}
 
 .hero-slides__title {
   position: relative;
+  margin-top: 10px;
   font-size: 35px;
   text-shadow: 1px 1px 3px #111;
 }
 
 .hero-slides__button {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: calc(50% - 85px);
   width: 170px;
   padding: 10px;
@@ -509,6 +510,23 @@ button {cursor: pointer;}
     height: 600px;
   }
 
+  .swiper-slide-1 {background-position: center -550px;}
+  .swiper-slide-2 {background-position: center -610px;}
+  .swiper-slide-3 {
+    background-position: center -570px;
+  }
+  .swiper-slide-4 {
+    background-position: center -130px;
+
+  }
+  .swiper-slide-5 {
+    background-position: center -500px;
+  }
+  .swiper-slide-6 {background-position: center -650px;}
+  .swiper-slide-7 {background-image: url(images/7.jpg);}
+  .swiper-slide-8 {background-position: center -600px}
+
+
   .hero-slides__title {
     font-size: 28px;
   }
@@ -523,6 +541,10 @@ button {cursor: pointer;}
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
+  }
+
+  .swiper-container {
+    height: 1300px;
   }
 
   .services__list {
@@ -642,4 +664,17 @@ button {cursor: pointer;}
 .modal__button:hover {
   background-color: orange;
   color: #fff;
+}
+
+
+
+
+
+/* -------------------------------- */
+.header__logo {
+  display: flex;
+}
+
+.header__title {
+  margin: 0;
 }

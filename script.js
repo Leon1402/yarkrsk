@@ -1,10 +1,8 @@
 const swiper = new Swiper('.swiper-container', {
-
-    slidesPerView: 3,
+    slidesPerView: 9,
     spaceBetween: 5,
     direction: 'vertical',
-    allowTouchMove: true,
-    lazy: true,
+    allowTouchMove: false,
     loop: false,
     autoplay: {
         delay: 3000,
@@ -14,8 +12,8 @@ const swiper = new Swiper('.swiper-container', {
         768: {
         direction: 'horizontal',
             slidesPerView: 3,
-            allowTouchMove: false,
             loop: true,
+           
         }
     },
     navigation: {
