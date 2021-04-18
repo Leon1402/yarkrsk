@@ -510,23 +510,6 @@ button {cursor: pointer;}
     height: 600px;
   }
 
-  .swiper-slide-1 {background-position: center -550px;}
-  .swiper-slide-2 {background-position: center -610px;}
-  .swiper-slide-3 {
-    background-position: center -570px;
-  }
-  .swiper-slide-4 {
-    background-position: center -130px;
-
-  }
-  .swiper-slide-5 {
-    background-position: center -500px;
-  }
-  .swiper-slide-6 {background-position: center -650px;}
-  .swiper-slide-7 {background-image: url(images/7.jpg);}
-  .swiper-slide-8 {background-position: center -600px}
-
-
   .hero-slides__title {
     font-size: 28px;
   }
@@ -545,6 +528,34 @@ button {cursor: pointer;}
 
   .swiper-container {
     height: 1300px;
+  }
+
+  .swiper-slide-1 {
+    background-image: url(images/1-mobile.jpg);
+    background-position: bottom;
+  }
+  .swiper-slide-2 {
+    background-image: url(images/2-mobile.jpg);
+  }
+  .swiper-slide-3 {
+    background-image: url(images/3-mobile.jpg);
+  }
+  .swiper-slide-4 {
+    background-image: url(images/4-mobile.jpg);
+  }
+  .swiper-slide-5 {
+    background-image: url(images/5-mobile.jpg);
+    background-position: top;
+  }
+  .swiper-slide-6 {
+    background-image: url(images/6-mobile.jpg);
+  }
+  .swiper-slide-7 {
+    background-image: url(images/7-mobile.jpg);
+    background-position: bottom;
+  }
+  .swiper-slide-8 {
+    background-image: url(images/8-mobile.jpg);
   }
 
   .services__list {
@@ -671,6 +682,10 @@ button {cursor: pointer;}
 
 
 /* -------------------------------- */
+.header-page {
+  position: relative;
+}
+
 .header__logo {
   display: flex;
 }
