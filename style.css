@@ -718,10 +718,15 @@ button {cursor: pointer;}
 
 .main__container {
   padding-left: 20px;
+  display: flex;
 } 
 
 .inner-list {
   padding-left: 30px;
+}
+
+.nav {
+  margin-right: 30px;
 }
 
 .nav__button {
@@ -742,4 +747,18 @@ button {cursor: pointer;}
   margin-top: -8px;
   border: 2px solid #333;
   border-radius: 50%;
+}
+
+.cars {
+  width: 100%;
+}
+
+.cars__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cars__item {
+  flex: 0 0 33%;
+  border: 1px solid red;
 }
