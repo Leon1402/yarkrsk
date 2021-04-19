@@ -686,10 +686,60 @@ button {cursor: pointer;}
   position: relative;
 }
 
-.header__logo {
+.header-page__block {
+  display: flex;
+  align-items: center;
+}
+
+.header-page__title {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.header-page__list {
   display: flex;
 }
 
-.header__title {
+.header-page__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.hero-page {
+  background-image: url(images/page.jpg);
+}
+
+.hero-page__title {
   margin: 0;
+  padding: 20px;
+  padding-left: 70px;
+  color: #fff;
+  text-shadow: 1px 1px 10px #111;
+}
+
+.main__container {
+  padding-left: 20px;
+} 
+
+.inner-list {
+  padding-left: 30px;
+}
+
+.nav__button {
+  position: relative;
+  padding: 5px;
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.nav__button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -8px;
+  border: 2px solid #333;
+  border-radius: 50%;
 }
