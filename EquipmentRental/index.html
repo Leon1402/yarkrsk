@@ -19,12 +19,14 @@
     <div class="container header__container">
       <div class="header__block">
         <img src="" alt="" class="header__image">
-        <h2 class="header__title">АРЕНДА<br>ТЕХНИКИ</h2>
+        <h2 class="header__title">АРЕНДА ТЕХНИКИ</h2>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">ГЛАВНАЯ</li>
-            <li class="header__item">КАТАЛОГ</li>
-            <li class="header__item header__item_work-type">ВИДЫ РАБОТ</li>
+            <li class="header__item header__item_catalog">КАТАЛОГ</li>
+            <li class="header__item header__item_work-type">
+              <a href="#type" class="header__link">ВИДЫ РАБОТ</a>
+            </li>
             <li class="header__item">ЯР-ХОЛДИНГ</li>
           </ul>
         </nav>
@@ -35,62 +37,66 @@
   <main class="main">
     <section class="hero">
       <div class="container hero__container">
-        <h2 class="hero__title">
-          Аренда спецтехники в Красноясрске
-        </h2>
+        <div class="hero__block">
+          <h2 class="hero__title">
+            Аренда спецтехники в Красноясрске
+          </h2>
+        </div>
     </section>
 
     <div class="container main__container">
       <nav class="main__nav nav">
-        <h3 class="nav__title">КАТАЛОГ СПЕЦТЕХНИКИ</h3>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <button class="nav__button">Автовышки</button>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Автокраны</button>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Бульдозеры</button>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Гидромолоты</button>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Грейдеры</button>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Катки</button>
-            <ul class="nav__inner-list inner-list">
-              <li class="iiner-list__item">
-                <button class="nav__button inner-list__button">Грунтовые</button>
-              </li>
-              <li class="iiner-list__item">
-                <button class="nav__button inner-list__button">Дорожные</button>
-              </li>
-            </ul>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Погрузчики</button>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Самосвалы</button>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button">Экскаваторы</button>
-            <ul class="nav__inner-list inner-list">
-              <li class="iiner-list__item">
-                <button class="nav__button inner-list__button">Гусеничные</button>
-              </li>
-              <li class="iiner-list__item">
-                <button class="nav__button inner-list__button">Колесные</button>
-              </li>
-              <li class="iiner-list__item">
-                <button class="nav__button inner-list__button">Экскаваторы — Погрузчики</button>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="nav__block">
+          <h3 class="nav__title">КАТАЛОГ СПЕЦТЕХНИКИ</h3>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <button class="nav__button">Автовышки</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button">Автокраны</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button">Бульдозеры</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button">Гидромолоты</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button">Грейдеры</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button nav__button_open">Катки</button>
+              <ul class="nav__inner-list inner-list">
+                <li class="iiner-list__item">
+                  <button class="nav__button inner-list__button">Грунтовые</button>
+                </li>
+                <li class="iiner-list__item">
+                  <button class="nav__button inner-list__button">Дорожные</button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button">Погрузчики</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button">Самосвалы</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button nav__button_open">Экскаваторы</button>
+              <ul class="nav__inner-list inner-list">
+                <li class="iiner-list__item">
+                  <button class="nav__button inner-list__button">Гусеничные</button>
+                </li>
+                <li class="iiner-list__item">
+                  <button class="nav__button inner-list__button">Колесные</button>
+                </li>
+                <li class="iiner-list__item">
+                  <button class="nav__button inner-list__button">Экскаваторы-Погрузчики</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div class="main__content">
@@ -126,9 +132,47 @@
           </ul>
         </section>
 
-        <section class="worktype section">
+        <section class="equipment section">
+          <h2 class="equipment__title main__title">
+            АРЕНДА СПЕЦТЕХНИКИ ПОД ЛЮБЫЕ ЗАДАЧИ
+          </h2>
+          <ul class="equipment__list">
+            <li class="equipment__item">
+              <img src="images/Vyshk.png" alt="Автовышка" class="equipment__img">
+            </li>
+            <li class="equipment__item">
+              <img src="images/Kr.png" alt="Автокран" class="equipment__img">
+            </li>
+            <li class="equipment__item equipment__item_transform">
+              <img src="images/Bul.png" alt="Бульдозер" class="equipment__img">
+            </li>
+            <li class="equipment__item">
+              <img src="images/Greyd.png" alt="Грейдер" class="equipment__img">
+            </li>
+            <li class="equipment__item equipment__item_transform">
+              <img src="images/Kat.png" alt="Каток" class="equipment__img">
+            </li>
+            <li class="equipment__item">
+              <img src="images/Pogruz.png" alt="Погрузчик" class="equipment__img equipment__img_cat">
+            </li>
+            <li class="equipment__item">
+              <img src="images/Sam.png" alt="Самосвал" class="equipment__img">
+            </li>
+            <li class="equipment__item equipment__item_transform">
+              <img src="images/Ex.png" alt="Экскаватор" class="equipment__img">
+            </li>
+            
+          </ul>
+          <p class="equipment__text">
+            Вы приобретаете надежного партнера. В числе первоочередных преимуществ нашей компании – весомый опыт работы
+            с коммерческими и государственными заказчиками. Мы успешно справились с большим количеством подрядов на
+            строительные работы – и приобрели многотонный багаж бесценного опыта решения любых рабочих задач.
+          </p>
+        </section>
+
+        <section class="worktype section" id="type">
           <h2 class="worktype__title main__title">ВИДЫ РАБОТ</h2>
-          <h3 class="worktype-row__title">ПОДХОДЯЩАЯ ТЕХНИКА ДЛЯ</h3>
+          <h3 class="worktype-row__title">ПОДХОДЯЩАЯ ТЕХНИКА ДЛЯ:</h3>
           <div class="worktype__container">
             <div class="worktype__row worktype-row">
               <ul class="worktype-row__list">
@@ -141,7 +185,7 @@
                 <li class="worktype-row__item">
                   <img src="images/icon2.gif" alt="" class="worktype-row__image">
                   <p class="worktype-row__text">
-                    СТРОИТЕЛЬСТВО (ЖИЛИЩНОЕ, ПРОМЫШЛЕННОЕ, КОММЕРЧЕСКОЕ, СНОС )
+                    СТРОИТЕЛЬСТВО (ЖИЛИЩНОЕ, ПРОМЫШЛЕННОЕ, КОММЕРЧЕСКОЕ, СНОС)
                   </p>
                 </li>
                 <li class="worktype-row__item">
@@ -172,7 +216,7 @@
             </div>
             <div class="worktype__row worktype-row worktype__row_second">
               <p class="worktype-row__text">
-                Комплексный подход - Вам достаточно рассказать о поставленной задачи, а способы решения и методы их
+                <b>Комплексный подход</b> - Вам достаточно рассказать о поставленной задачи, а способы решения и методы их
                 реализации мы предложим сами.
               </p>
               <p class="worktype-row__text">
@@ -189,17 +233,6 @@
             </div>
             </div>
             </section>
-            
-            <section class="equipment section">
-          <h2 class="equipment__title main__title">
-            АРЕНДА СПЕЦТЕХНИКИ ПОД ЛЮБЫЕ ЗАДАЧИ
-          </h2>
-          <p class="equipment__text">
-            Вы приобретаете надежного партнера. В числе первоочередных преимуществ нашей компании – весомый опыт работы
-            с коммерческими и государственными заказчиками. Мы успешно справились с большим количеством подрядов на
-            строительные работы – и приобрели многотонный багаж бесценного опыта решения любых рабочих задач.
-          </p>
-        </section>
 
         <!-- <section class="cars section">
           <h2 class="cars__title">ПРЕИМУЩЕСТВА РАБОТЫ С НАШЕЙ КОМПАНИЕЙ</h2>
@@ -221,6 +254,7 @@
             </li>
           </ul> -->
         </section>
+
         <section class="form-section">
           <div class="form-section__row contacts">
             <h3 class="contacts__title">ЗАДАЙТЕ ВОПРОС</h3>
@@ -279,6 +313,8 @@
       <a href="http://yarkr.ru/" class="home-link">yarkr.ru</a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
