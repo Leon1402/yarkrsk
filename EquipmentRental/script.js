@@ -11,7 +11,3 @@ for (const item of navButton) {
         }
     })
 }
-
-document.querySelector(".header__item_catalog").addEventListener('click', () => {
-    document.querySelector('.nav').classList.toggle('nav_active');
-})
