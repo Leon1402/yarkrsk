@@ -8,7 +8,7 @@ html {scroll-behavior: smooth;}
 
 body {
   margin: 0;
-  /* margin-top: 50px; */
+  margin-top: 50px;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
@@ -81,6 +81,32 @@ button {cursor: pointer;}
 
 .header__item:not(:last-child) {
   margin-right: 10px;
+}
+
+.header__item_link {
+  cursor: pointer;
+  position: relative;
+  border-bottom: 2px solid #CC0;
+}
+
+.link__list {
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  box-shadow: 0px 3px 5px 0px;
+
+  transition: transform .3s ease-out;
+}
+
+.header__item_link:hover .link__list {
+  transform: scaleY(1);
+}
+
+.link {
+  display: inline-block;
+  padding: 5px;
 }
 
 
@@ -217,6 +243,7 @@ button {cursor: pointer;}
 
 .cars {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .cars__list {
@@ -225,9 +252,26 @@ button {cursor: pointer;}
 }
 
 .cars__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 0 0 33%;
-  border: 1px solid red;
 }
+
+.cars__button {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.cars__button_order {
+  background-color: #CC0;
+  margin-bottom: 10px;
+}
+
 
 .form-section {
   display: flex;
