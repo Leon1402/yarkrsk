@@ -21,55 +21,54 @@
         <img src="" alt="" class="header__image">
         <h2 class="header__title">АРЕНДА ТЕХНИКИ</h2>
       </div>
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">ГЛАВНАЯ</li>
-            <li class="header__item header__item_catalog">КАТАЛОГ</li>
-            <li class="header__item header__item_work-type">
-              <a href="#type" class="header__link">ВИДЫ РАБОТ</a>
-            </li>
-            <li class="header__item header__item_link">
-              ЯР-ХОЛДИНГ
-              <ul class="link__list">
-                <li class="link__item">
-                  <a href="" class="link">ЯР ХОЛДИНГ</a
-                    li>
-                <li class="link__item">
-                  <a href="" class="link">СПЕЦТЕХ ЯР</a>
-                </li>
-                <li class="link__item">
-                  <a href="" class="link">ТОПЛИВО ЯР</a>
-                </li>
-                <li class="link__item">
-                  <a href="" class="link">ЭНЕРТНЫЕ ЯР</a>
-                </li>
-                <li class="link__item">
-                  <a href="" class="link">РЕМОНТ СЕРВИС ЯР</a>
-                </li>
-                <li class="link__item">
-                  <a href="" class="link">СТРОЙМАТЕРИАЛЫ ЯР</a>
-                </li>
-                <li class="link__item">
-                  <a href="" class="link">ТРАЛЬНЫЕ ПЕРЕВОЗКИ ЯР</a>
-                </li>
-                <li class="link__item">
-                  <a href="" class="link">МАТАЛЛОПРОКАТ ЯР</a>
-                </li>
-              </ul>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item header__item_home">ГЛАВНАЯ</li>
+          <li class="header__item header__item_catalog">КАТАЛОГ</li>
+          <li class="header__item header__item_work-type">
+            <a href="#type" class="header__link">ВИДЫ РАБОТ</a>
+          </li>
+          <li class="header__item header__item_link">
+            ЯР-ХОЛДИНГ
+            <ul class="link__list">
+              <li class="link__item">
+                <a href="" class="link">ЯР ХОЛДИНГ</a li>
+              <li class="link__item">
+                <a href="" class="link">СПЕЦТЕХ ЯР</a>
+              </li>
+              <li class="link__item">
+                <a href="" class="link">ТОПЛИВО ЯР</a>
+              </li>
+              <li class="link__item">
+                <a href="" class="link">ЭНЕРТНЫЕ ЯР</a>
+              </li>
+              <li class="link__item">
+                <a href="" class="link">РЕМОНТ СЕРВИС ЯР</a>
+              </li>
+              <li class="link__item">
+                <a href="" class="link">СТРОЙМАТЕРИАЛЫ ЯР</a>
+              </li>
+              <li class="link__item">
+                <a href="" class="link">ТРАЛЬНЫЕ ПЕРЕВОЗКИ ЯР</a>
+              </li>
+              <li class="link__item">
+                <a href="" class="link">МАТАЛЛОПРОКАТ ЯР</a>
+              </li>
+            </ul>
 
-            </li>
-          </ul>
-        </nav>
-        <div class="header__contacts header-contacts">
-            <a type="main" href="" class="header-contacts__link">
-              <i class="far fa-envelope"></i>
-              123@mail.ru
-            </a>
-            <a href="tel" class="header-contacts__link">
-              <i class="fas fa-phone-alt"></i>
-              +7 (800) 000-00-00
-            </a>
-        </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts header-contacts">
+        <a type="main" href="" class="header-contacts__link">
+          <i class="far fa-envelope"></i>
+          123@mail.ru
+        </a>
+        <a href="tel" class="header-contacts__link">
+          <i class="fas fa-phone-alt"></i>
+          +7 (800) 000-00-00
+        </a>
+      </div>
     </div>
   </header>
 
@@ -89,48 +88,52 @@
           <h3 class="nav__title">КАТАЛОГ СПЕЦТЕХНИКИ</h3>
           <ul class="nav__list">
             <li class="nav__item">
-              <button class="nav__button">Автовышки</button>
+              <button class="nav__button" data-type="all">Все</button>
             </li>
             <li class="nav__item">
-              <button class="nav__button">Автокраны</button>
+              <button class="nav__button" data-type="tower">Автовышки</button>
             </li>
             <li class="nav__item">
-              <button class="nav__button">Бульдозеры</button>
+              <button class="nav__button" data-type="crane">Автокраны</button>
             </li>
             <li class="nav__item">
-              <button class="nav__button">Гидромолоты</button>
+              <button class="nav__button" data-type="bul">Бульдозеры</button>
             </li>
             <li class="nav__item">
-              <button class="nav__button">Грейдеры</button>
+              <button class="nav__button" data-type="hydra">Гидромолоты</button>
             </li>
             <li class="nav__item">
-              <button class="nav__button nav__button_open">Катки</button>
+              <button class="nav__button" data-type="grader">Грейдеры</button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button_open">Катки</button>
               <ul class="nav__inner-list inner-list">
                 <li class="iiner-list__item">
-                  <button class="nav__button inner-list__button">Грунтовые</button>
+                  <button class="nav__button inner-list__button" data-type="ground">Грунтовые</button>
                 </li>
                 <li class="iiner-list__item">
-                  <button class="nav__button inner-list__button">Дорожные</button>
+                  <button class="nav__button inner-list__button" data-type="road">Дорожные</button>
                 </li>
               </ul>
             </li>
             <li class="nav__item">
-              <button class="nav__button">Погрузчики</button>
+              <button class="nav__button" data-type="loader">Погрузчики</button>
             </li>
             <li class="nav__item">
-              <button class="nav__button">Самосвалы</button>
+              <button class="nav__button" data-type="tipper">Самосвалы</button>
             </li>
             <li class="nav__item">
-              <button class="nav__button nav__button_open">Экскаваторы</button>
+              <button class="nav__button_open">Экскаваторы</button>
               <ul class="nav__inner-list inner-list">
                 <li class="iiner-list__item">
-                  <button class="nav__button inner-list__button">Гусеничные</button>
+                  <button class="nav__button inner-list__button" data-type="crawler">Гусеничные</button>
                 </li>
                 <li class="iiner-list__item">
-                  <button class="nav__button inner-list__button">Колесные</button>
+                  <button class="nav__button inner-list__button" data-type="wheeled">Колесные</button>
                 </li>
                 <li class="iiner-list__item">
-                  <button class="nav__button inner-list__button">Экскаваторы-Погрузчики</button>
+                  <button class="nav__button inner-list__button"
+                    data-type="backhoeLoader">Экскаваторы-Погрузчики</button>
                 </li>
               </ul>
             </li>
@@ -200,7 +203,7 @@
             <li class="equipment__item equipment__item_transform">
               <img src="images/Ex.png" alt="Экскаватор" class="equipment__img">
             </li>
-            
+
           </ul>
           <p class="equipment__text">
             Вы приобретаете надежного партнера. В числе первоочередных преимуществ нашей компании – весомый опыт работы
@@ -255,7 +258,8 @@
             </div>
             <div class="worktype__row worktype-row worktype__row_second">
               <p class="worktype-row__text">
-                <b>Комплексный подход</b> - Вам достаточно рассказать о поставленной задачи, а способы решения и методы их
+                <b>Комплексный подход</b> - Вам достаточно рассказать о поставленной задачи, а способы решения и методы
+                их
                 реализации мы предложим сами.
               </p>
               <p class="worktype-row__text">
@@ -270,41 +274,344 @@
                 поставленных задач в течении суток.
               </p>
             </div>
-            </div>
-            </section>
+          </div>
+        </section>
 
-        <section class="cars section">
+        <section class="cars">
           <h2 class="cars__title main__title">АРЕНДА МАШИН</h2>
           <ul class="cars__list list">
-            <li class="cars__item">
-              <h2 class="cars__item-title">машина</h2>
-              <img src="https://www.rbauto.ru/upload/iblock/7c0/7c0b046b876c5db2f1eeff3b3645caa1.jpg" alt="">
-              <button class="cars__button cars__button_order">Заказать</button>
-              <button class="cars__button cars__button_more">Подробнее ></button>
+            <li class="cars__item" data-tower>
+              <h2 class="cars__item-title">Автовышка 15м</h2>
+              <img class="cars__image" src="images/15_Ml.jpg" alt="автовышка 15м">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
             </li>
-            <li class="cars__item">
-              <h2 class="cars__item-title">машина</h2>
-              <img src="https://www.rbauto.ru/upload/iblock/7c0/7c0b046b876c5db2f1eeff3b3645caa1.jpg" alt="">
-              <button class="cars__button cars__button_order">Заказать</button>
-              <button class="cars__button cars__button_more">Подробнее ></button>
+            <li class="cars__item" data-tower>
+              <h2 class="cars__item-title">Автовышка 22м</h2>
+              <img class="cars__image" src="images/22_M.jpg" alt="Автовышка 22м">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
             </li>
-            <li class="cars__item">
-              <h2 class="cars__item-title">машина</h2>
-              <img src="https://www.rbauto.ru/upload/iblock/7c0/7c0b046b876c5db2f1eeff3b3645caa1.jpg" alt="">
-              <button class="cars__button cars__button_order">Заказать</button>
-              <button class="cars__button cars__button_more">Подробнее ></button>
+            <li class="cars__item" data-tower>
+              <h2 class="cars__item-title">Автовышка 32м</h2>
+              <img class="cars__image" src="images/32_M.jpg" alt="Автовышка 32м">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
             </li>
-            <li class="cars__item">
-              <h2 class="cars__item-title">машина</h2>
-              <img src="https://www.rbauto.ru/upload/iblock/7c0/7c0b046b876c5db2f1eeff3b3645caa1.jpg" alt="">
-              <button class="cars__button cars__button_order">Заказать</button>
-              <button class="cars__button cars__button_more">Подробнее ></button>
+            <li class="cars__item" data-tower>
+              <h2 class="cars__item-title">Автовышка 40м</h2>
+              <img class="cars__image" src="images/40_M.jpg" alt="Автовышка 40м">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
             </li>
-            <li class="cars__item">
-              <h2 class="cars__item-title">машина</h2>
-              <img src="https://www.rbauto.ru/upload/iblock/7c0/7c0b046b876c5db2f1eeff3b3645caa1.jpg" alt="">
-              <button class="cars__button cars__button_order">Заказать</button>
-              <button class="cars__button cars__button_more">Подробнее ></button>
+
+            <li class="cars__item" data-crane>
+              <h2 class="cars__item-title">Камаз КС 45717К-1Р (25т)</h2>
+              <img class="cars__image" src="images/" alt="Камаз КС 45717К-1Р (25т)">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crane>
+              <h2 class="cars__item-title">Камаз КС-45717К-3Р. Вездеход 6х6 (25т)</h2>
+              <img class="cars__image" src="images/" alt="Камаз КС-45717К-3Р. Вездеход 6х6 (25т)">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crane>
+              <h2 class="cars__item-title">Автокран XCMG QY30K5S (30т)</h2>
+              <img class="cars__image" src="images/" alt="Автокран XCMG QY30K5S (30т)">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crane>
+              <h2 class="cars__item-title">Автокран МЗКТ КС-65721-2 (60т)</h2>
+              <img class="cars__image" src="images/" alt="Автокран МЗКТ КС-65721-2 (60т)">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <li class="cars__item" data-bul>
+              <h2 class="cars__item-title">Б10М</h2>
+              <img class="cars__image" src="images/" alt="Б10М">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-bul>
+              <h2 class="cars__item-title">Shantui SD16</h2>
+              <img class="cars__image" src="images/" alt="Shantui SD16">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-bul>
+              <h2 class="cars__item-title">Shantui SD22</h2>
+              <img class="cars__image" src="images/" alt="Shantui SD22">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-bul>
+              <h2 class="cars__item-title">Shantui SD32</h2>
+              <img class="cars__image" src="images/" alt="Shantui SD32">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-bul>
+              <h2 class="cars__item-title">Четра Т25</h2>
+              <img class="cars__image" src="images/" alt="Четра Т25">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <!-- Гидромолоты -->
+
+            <li class="cars__item" data-grader>
+              <h2 class="cars__item-title">ДЗ-143</h2>
+              <img class="cars__image" src="images/Dz-143.jpg" alt="ДЗ-143">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-grader>
+              <h2 class="cars__item-title">ДЗ-98B</h2>
+              <img class="cars__image" src="images/Dz_98.jpg" alt="ДЗ-98B">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-grader>
+              <h2 class="cars__item-title">Caterpillar 120M</h2>
+              <img class="cars__image" src="images/CAT_120.png" alt="Caterpillar 120M">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <li class="cars__item" data-ground>
+              <h2 class="cars__item-title">Ammann ASC 130D</h2>
+              <img class="cars__image" src="images/Ammann_ASC_130_D.jpg" alt="Ammann ASC 130D">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-ground>
+              <h2 class="cars__item-title">SDLG RS8140</h2>
+              <img class="cars__image" src="images/SDLG_RS8140.jpg" alt="SDLG RS8140">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-ground>
+              <h2 class="cars__item-title">LiuGong CLG 614H</h2>
+              <img class="cars__image" src="images/LiuGong_CLG_612H.jpg" alt="LiuGong CLG 614H">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-ground>
+              <h2 class="cars__item-title">XCMG XS143J</h2>
+              <img class="cars__image" src="images/XCMG_XS143J.jpg" alt="XCMG XS143J">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-ground>
+              <h2 class="cars__item-title">Shantui SR16</h2>
+              <img class="cars__image" src="images/Shantui_SR16.jpg" alt="Shantui SR16">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-ground>
+              <h2 class="cars__item-title">Ammann ASC 150D</h2>
+              <img class="cars__image" src="images/Ammann_ASC_150D.jpg" alt="Ammann ASC 150D">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <li class="cars__item" data-road>
+              <h2 class="cars__item-title">BOMAG BW 100 AD-5</h2>
+              <img class="cars__image" src="images/BOMAG_BW_100_AD-5.jpg" alt="BOMAG BW 100 AD-5">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-road>
+              <h2 class="cars__item-title">Sakai tw500</h2>
+              <img class="cars__image" src="images/Sakai_tw500.jpg" alt="Sakai tw500">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <li class="cars__item" data-loader>
+              <h2 class="cars__item-title">Foton Lovol fl936f</h2>
+              <img class="cars__image" src="images/" alt="Foton Lovol fl936f">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-loader>
+              <h2 class="cars__item-title">SDLG LG936L</h2>
+              <img class="cars__image" src="images/" alt="SDLG LG936L">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-loader>
+              <h2 class="cars__item-title">XCLG LW300F</h2>
+              <img class="cars__image" src="images/" alt="XCLG LW300F">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-loader>
+              <h2 class="cars__item-title">Bobcat</h2>
+              <img class="cars__image" src="images/" alt="Bobcat">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <!-- Самосвалы -->
+
+            <li class="cars__item" data-crawler>
+              <h2 class="cars__item-title">Case 210</h2>
+              <img class="cars__image" src="images/" alt="Case 210">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crawler>
+              <h2 class="cars__item-title">Case CX 290B</h2>
+              <img class="cars__image" src="images/" alt="Case CX 290B">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crawler>
+              <h2 class="cars__item-title">Hitachi 270</h2>
+              <img class="cars__image" src="images/" alt="Hitachi 270">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crawler>
+              <h2 class="cars__item-title">Doosan 300</h2>
+              <img class="cars__image" src="images/" alt="Doosan 300">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crawler>
+              <h2 class="cars__item-title">Hyundai 320</h2>
+              <img class="cars__image" src="images/" alt="Hyundai 320">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crawler>
+              <h2 class="cars__item-title">Hyundai 330</h2>
+              <img class="cars__image" src="images/" alt="Hyundai 330">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-crawler>
+              <h2 class="cars__item-title">Case CX 350B</h2>
+              <img class="cars__image" src="images/" alt="Case CX 350B">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <li class="cars__item" data-wheeled>
+              <h2 class="cars__item-title">Doosan 180</h2>
+              <img class="cars__image" src="images/" alt="Doosan 180">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-wheeled>
+              <h2 class="cars__item-title">Doosan 190</h2>
+              <img class="cars__image" src="images/" alt="Doosan 190">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-wheeled>
+              <h2 class="cars__item-title">Hitachi 210</h2>
+              <img class="cars__image" src="images/" alt="Hitachi 210">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+
+            <li class="cars__item" data-backhoeLoader>
+              <h2 class="cars__item-title">MST M544</h2>
+              <img class="cars__image" src="images/MST_M544.jpg" alt="MST M544">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
+            </li>
+            <li class="cars__item" data-backhoeLoader>
+              <h2 class="cars__item-title">CAT 426F2</h2>
+              <img class="cars__image" src="images/CAT_426F2.png" alt="CAT 426F2">
+              <div class="cars__buttons">
+                <button class="cars__button cars__button_order">Заказать</button>
+                <button class="cars__button cars__button_more">Подробнее</button>
+              </div>
             </li>
           </ul>
         </section>

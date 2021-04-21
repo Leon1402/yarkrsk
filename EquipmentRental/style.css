@@ -6,6 +6,11 @@
 
 html {scroll-behavior: smooth;}
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 body {
   margin: 0;
   margin-top: 50px;
@@ -185,13 +190,12 @@ button {cursor: pointer;}
   font-size: 13px;
 }
 
-.nav__button {
+.nav__button,
+.nav__button_open {
   position: relative;
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: transparent;
-  border: none;
 }
 
 .nav__button_open::after {
@@ -215,6 +219,17 @@ button {cursor: pointer;}
   height: 10px;
   margin-top: -8px;
   border: 2px solid #333;
+  border-radius: 50%;
+}
+
+.nav__button_active::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
   border-radius: 50%;
 }
 
@@ -244,22 +259,40 @@ button {cursor: pointer;}
 .cars {
   width: 100%;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
 }
 
 .cars__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cars__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   flex: 0 0 33%;
 }
 
-.cars__button {
+.cars__item-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 40px;
+  text-align: center;
+}
+
+.cars__buttons {
   width: 60%;
+}
+
+.cars__button {
+  width: 100%;
   padding: 10px;
   border: none;
   font-weight: bold;
@@ -272,6 +305,15 @@ button {cursor: pointer;}
   margin-bottom: 10px;
 }
 
+.cars__button_more {
+  background-color: #111;
+  color: #fff;
+}
+
+.cars__image {
+  height: 150px;
+  margin-bottom: 20px;
+}
 
 .form-section {
   display: flex;
@@ -432,7 +474,22 @@ button {cursor: pointer;}
   }
 
   .nav {
-   display: none;
+    background-color: #fff;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    padding-left: 10px;
+    width: 40%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-out; 
+    z-index: 100;
+    box-shadow: 2px 2px 5px 1px #333;
+  }
+
+  .nav_active {
+    display: block;
+    transform: scaleX(1);
   }
 
   .section {
@@ -466,6 +523,9 @@ button {cursor: pointer;}
     justify-content: space-between;
   }
 
+  .cars__item {
+    flex: 0 0 48%
+  }
 
   .home__item {
     flex: 0 0 48%;
