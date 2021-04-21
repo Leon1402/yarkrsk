@@ -7,6 +7,10 @@
 html {scroll-behavior: smooth;}
 
 button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: inherit;
   background-color: transparent;
   border: none;
 }
@@ -86,6 +90,11 @@ button {cursor: pointer;}
 
 .header__item:not(:last-child) {
   margin-right: 10px;
+}
+
+.header__item_catalog {
+  font-size: inherit;
+  display: none;
 }
 
 .header__item_link {
@@ -231,6 +240,10 @@ button {cursor: pointer;}
   height: 8px;
   background-color: #333;
   border-radius: 50%;
+}
+
+.main__content {
+  width: 100%;
 }
 
 .home__list {
@@ -490,6 +503,11 @@ button {cursor: pointer;}
   .nav_active {
     display: block;
     transform: scaleX(1);
+  }
+
+  
+  .header__item_catalog {
+    display: inline;
   }
 
   .section {
