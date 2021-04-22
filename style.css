@@ -380,6 +380,7 @@ button {
 
 .aboutus__container {
   padding: 20px;
+  padding-bottom: 10px;
 }
 
 
@@ -418,9 +419,10 @@ button {
 }
 
 .aboutus__text {
+  margin-bottom: 0;
+  padding: 10px 0;
   text-align: left;
   text-indent: 20px;
-  padding: 10px 0;
 }
 
 .callus__container {
@@ -520,13 +522,13 @@ button {
 }
 
 .footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
   body {
-    margin-top: 55px;
+    margin-top: 30px;
   }
 
   .header__container {
@@ -534,12 +536,7 @@ button {
   }
   
   .header__location {
-    margin-bottom: 20px;
-  }
-
-  .header__item:not(:last-child) {
-    margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .header__link {
@@ -574,8 +571,9 @@ button {
 
 @media screen and (max-width: 768px) {
   body {
-    margin-top: 75px;
+    margin-top: 50px;
   }
+
   .header__nav {
     font-size: 12px;
     justify-content: center;
@@ -637,9 +635,10 @@ button {
     padding-top: 220px;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
-    background-position: center 30px;
+    padding-bottom: 20px;
+    background-position: center 20px;
     background-size: 300px;
+    border-top: none;
   }
 
   .callus__row {
