@@ -35,14 +35,8 @@
         <i class="fas fa-mobile-alt"></i>
         <a href="tel:+79632643969" class="contacts__link contacts__link_phone">8 (963) 264-39-69</a>
       </div>
-      <button class="header__burger burger" aria-label="Открыть меню">
-        <span class="burger__item"></span>
-      </button>
       <nav class="header__nav">
         <ul class="header__list list">
-          <li>
-            <button class="header__close">X</button>
-          </li>
           <li class="header__item">
             <a href="#top" class="header__link">ГЛАВНАЯ</a>
           </li>
@@ -171,6 +165,31 @@
       </form>
     </section>
 
+    <section class="bank-guarantees" id="bank">
+      <div class="container bank-guarantees__container">
+        <h2 class="bank-guarantees__title title">БАНКОВСКАЯ ГАРАНТИЯ</h2>
+        <div class="bank-guarantees__contact">
+          <a href="tel:79059767166" class="bank-guarantees__number">
+            <i class="fas fa-mobile-alt bank-guarantees__icon"></i>
+            8 (905) 976-71-66</a>
+          - ГК Реагент
+        </div>
+        <p class="bank-guarantees__text">
+          Оказываем услуги по получению в течении 1 рабочего дня БАНКОВСКИХ ГАРАНТИЙ на участие в конкурсе и обеспечения
+          исполнения обязательств по уже выигранному контракту:
+        </p>
+        <ul class="bank-guarantees__list">
+          <li class="bank-guarantees__item">тендерные</li>
+          <li class="bank-guarantees__item">возврат аванса</li>
+          <li class="bank-guarantees__item">исполнение обязательств по контракту</li>
+          <li class="bank-guarantees__item">исполнение гарантийных обязательств</li>
+        </ul>
+        <p class="bank-guarantees__text">
+          И КРЕДИТОВАНИЯ под контракт.
+        </p>
+      </div>
+    </section>
+
     <section class="aboutus" id="aboutus">
       <div class="container aboutus__container">
         <h2 class="aboutus__title title">О НАС</h2>
@@ -203,45 +222,39 @@
       </div>
     </section>
 
-    <section class="bank-guarantees" id="bank">
-      <div class="container bank-guarantees__container">
-        <h2 class="bank-guarantees__title title">БАНКОВСКАЯ ГАРАНТИЯ</h2>
-        <div class="bank-guarantees__contact">
-          <a href="tel:79059767166" class="bank-guarantees__number">
-            <i class="fas fa-mobile-alt bank-guarantees__icon"></i>
-            8 (905) 976-71-66</a>
-          - ГК Реагент
-        </div>
-        <p class="bank-guarantees__text">
-          Оказываем услуги по получению в течении 1 рабочего дня БАНКОВСКИХ ГАРАНТИЙ на участие в конкурсе и обеспечения
-          исполнения обязательств по уже выигранному контракту:
-        </p>
-        <ul class="bank-guarantees__list">
-          <li class="bank-guarantees__item">тендерные</li>
-          <li class="bank-guarantees__item">возврат аванса</li>
-          <li class="bank-guarantees__item">исполнение обязательств по контракту</li>
-          <li class="bank-guarantees__item">исполнение гарантийных обязательств</li>
-        </ul>
-        <p class="bank-guarantees__text">
-          И КРЕДИТОВАНИЯ под контракт.
-        </p>
+    <section class="callus">
+      <div class="container callus__container">
+        <div class="callus__row callus__row_contacts">
+          <h2 class="callus__title title">НАШИ КОНТАКТЫ</h2>
+          <address class="contacts">
+            <ul class="contacts__list" id="contacts">
+              <li class="contacts__item">
+                <a href="tel:+79632643969" class="contacts__link contacts__link_phone">+7 963 264-39-69</a>
+              </li>
+              <li class="contacts__item">
+                <a href="mailto:yarkrsk@mail.ru" class="contacts__link contacts__link_mail">yarkrsk@mail.ru</a>
+              </li>
+            </ul>
+        </div>  
+        <form class="callus__row form">
+          <h3 class="form__title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h3>
+          <label class="form__label">
+            Ваши ФИО*
+            <input type="text" class="form__input" required>
+          </label>
+          <label class="form__label">
+            Ваш телефон*
+            <input type="tel" class="form__input" required>
+          </label>
+          <button type="submit" class="form__button">ОТПРАВИТЬ</button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="contacts__container container">
-      <h2 class="contacts__title title">НАШИ КОНТАКТЫ</h2>
-      <address .contacts>
-        <ul class="contacts__list" id="contacts">
-          <li class="contacts__item">
-            <a href="tel:+79632643969" class="contacts__link contacts__link_phone">+7 963 264-39-69</a>
-          </li>
-          <li class="contacts__item">
-            <a href="mailto:yarkrsk@mail.ru" class="contacts__link contacts__link_mail">yarkrsk@mail.ru</a>
-          </li>
-        </ul>
-        <ul class="aboutus__social social messegers">
+    <div class="footer__container container">
+        <ul class="footer__social social messegers">
           <li class="social__item">
             <a href="https://wa.me/79632643969" class="social__link social__link_whatsapp">
               <i class="fab fa-whatsapp"></i>
@@ -259,7 +272,7 @@
           </li>
         </ul>
 
-        <ul class="aboutus__social social">
+        <ul class="footer__social social">
           <li class="social__item">
             <a href="" class="social__link social__link_vk">
               <i class="fab fa-vk"></i>

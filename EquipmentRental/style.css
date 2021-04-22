@@ -291,6 +291,8 @@ button {cursor: pointer;}
   align-items: center;
   justify-content: space-between;
   flex: 0 0 33%;
+
+  border: 1px solid red;
 }
 
 .cars__item-title {
@@ -325,7 +327,6 @@ button {cursor: pointer;}
 }
 
 .cars__image {
-  height: 150px;
   margin-bottom: 20px;
 }
 
