@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper-container', {
         disableOnInteraction: false,
     },
     breakpoints: {
-        768: {
+        769: {
         direction: 'horizontal',
             slidesPerView: 3,
             loop: true,
