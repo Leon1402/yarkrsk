@@ -564,8 +564,8 @@ button {
   }
 
   .services__list {
-    right: 20%;
-    top: 0;
+    left: -100%;
+    top: 100%;
   }
 }
 
