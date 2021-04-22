@@ -7,6 +7,7 @@
 html {scroll-behavior: smooth;}
 
 button {
+  position: relative;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -446,6 +447,60 @@ button {cursor: pointer;}
 
 .worktype-row__text {
   font-size: 12px;
+}
+
+.modal-arend {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1000;
+}
+
+.modal-arend_active {
+  display: flex;
+}
+
+.modal-arend__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+
+.modal-arend__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal-arend__input {
+  margin-top: 5px;
+  padding: 7px;
+  border: 1px solid #ccc;
+}
+
+.modal-arend__submit {
+  font-weight: bold;
+  background-color: #fdc619;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.modal-arend__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1024px) {
