@@ -390,7 +390,7 @@ button {
   width: 80%;
   padding: 20px;
   text-align: center;
-  border-top: 3px solid #fdc619;
+  border-top: 3px solid orange;
 }
 
 .aboutus__title::before {
@@ -400,9 +400,9 @@ button {
   left: 0;
   width: 30px;
   height: 100%;
-  border-top: 3px solid #fdc619;
-  border-left: 3px solid #fdc619;
-  border-bottom: 3px solid #fdc619;
+  border-top: 3px solid orange;
+  border-left: 3px solid orange;
+  border-bottom: 3px solid orange;
 }
 
 .aboutus__title::after {
@@ -412,9 +412,9 @@ button {
   right: 0px;
   width: 30px;
   height: 100%;
-  border-top: 3px solid #fdc619;
-  border-right: 3px solid #fdc619;
-  border-bottom: 3px solid #fdc619;
+  border-top: 3px solid orange;
+  border-right: 3px solid orange;
+  border-bottom: 3px solid orange;
 }
 
 .aboutus__text {
