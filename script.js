@@ -24,19 +24,6 @@ const swiper = new Swiper('.swiper-container', {
 
 const list = document.querySelector('.header__nav')
 
-document.querySelector('.burger').addEventListener('click', e => {
-    list.classList.add('header__nav_active');
-    e.cancelBubble = true
-})
-
-document.querySelector('.header__close').addEventListener('click', () => {
-    list.classList.remove('header__nav_active');
-})
-
-list.addEventListener('click', e => {
-    e._isListClicked = true
-});
-
 window.addEventListener('click', e => {
     if (!e._isListClicked) {
         list.classList.remove('header__nav_active');
