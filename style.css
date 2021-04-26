@@ -227,13 +227,7 @@ button {
   transform: rotate(45deg);
 }
 
-.bank__list {
-  margin: 0;
-  padding: 0;
-}
-
-.services__list,
-.bank__list {
+.services__list {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -252,23 +246,28 @@ button {
   box-shadow: 0px 0px 10px 1px;
 }
 
-.services__item:not(:last-child),
-.bank__item:not(:last-child) {
+.services__item { 
   position: relative;
+  padding-left: 25px;
+}
+
+.services__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/checkmark-png-16.png);
+}
+
+
+.services__item:not(:last-child){
+  padding-top: 0;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
-.services__item:not(:last-child):after,
-.bank__item:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: #333;
-}
 
 .services:hover>.services__list {
   transform: scaleY(1);
@@ -388,6 +387,7 @@ button {
 .aboutus__title {
   position: relative;
   margin: auto;
+  margin-bottom: 15px;
   width: 80%;
   padding: 20px;
   text-align: center;
@@ -419,23 +419,38 @@ button {
 }
 
 .aboutus__text {
-  margin-bottom: 0;
+  margin: 0;
   padding: 10px 0;
   text-align: left;
   text-indent: 20px;
 }
 
 .callus__container {
+  position: relative;
   display: flex;
   justify-content: flex-end;
-  padding-top: 40px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 80px;
   background-image: url(images/form.png);
-  background-size: 40%;
+  background-size: 35%;
   background-repeat: no-repeat;
-  background-position: -40px bottom;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  background-position: 10% 80%;
+}
+
+.callus__container::before,
+.callus__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background-color: #999;
+}
+
+.callus__container::after {
+  top: auto;
+  bottom: 0;
 }
 
 .callus__row {

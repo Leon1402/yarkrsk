@@ -22,7 +22,7 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
-const list = document.querySelector('.header__nav')
+const list = document.querySelector('.header__nav');
 
 window.addEventListener('click', e => {
     if (!e._isListClicked) {
