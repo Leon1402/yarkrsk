@@ -137,6 +137,7 @@ button {cursor: pointer;}
 .hero__container {
   background-image: url(images/page.jpg);
   background-position: center;
+  background-size: cover;
   padding: 0;
 }
 
@@ -253,7 +254,7 @@ button {cursor: pointer;}
   border-radius: 50%;
 }
 
-.home {
+.home__block {
   display: flex;
   flex-direction: column;
   padding-bottom: 250px;
@@ -432,7 +433,7 @@ button {cursor: pointer;}
   text-decoration: underline;
 }
 
-.cargo {
+.cargo__block {
   background-image: url(images/cargo.png);
   background-position: center bottom;
   background-size: 400px;
@@ -445,15 +446,32 @@ button {cursor: pointer;}
   flex-wrap: wrap;
 }
 
+.cargo__title {
+  margin-bottom: 20px;
+}
+
 .cargo__row {
-  flex: 0 0 50%;
+  flex: 0 0 48%;
   margin-bottom: 10px;
+}
+
+.cargo__list {
+  padding-left: 15px;
+  list-style-type: square;
+}
+
+.cargo__row:nth-child(2n-1) {
+  margin-right: 4%;
 }
 
 .cargo-row__title {
   position: relative;
-  margin-top: 0;
-  padding-left: 30px;
+  display: flex;
+  height: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: -5px;
+  padding-left: 20px;
   color: #fdc619;
   font-size: 15px;
 }
@@ -461,10 +479,10 @@ button {cursor: pointer;}
 .cargo-row__title::before {
   content: '';
   position: absolute;
-  top: -2px;
+  top: 2px;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-image: url(images/star.png);
   background-size: contain;
 }
@@ -545,8 +563,10 @@ button {cursor: pointer;}
     align-items: center;
   }
 
-  .home {
+  .home, 
+  .cargo {
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -569,7 +589,7 @@ button {cursor: pointer;}
   }
 
   .hero__title {
-    padding: 10px;
+    padding: 30px;
     text-align: center;
   } 
 
@@ -578,9 +598,21 @@ button {cursor: pointer;}
     font-size: 12px;
   }
 
-  .cargo {
+  .cargo__block {
     padding-bottom: 200px; ;
     background-size: 300px;
+  }
+
+  .cargo__content {
+    width: 90%;
+  }
+
+  .cargo-row__title {
+    font-size: 12px;
+  }
+
+  .cargo__item {
+    font-size: 12px;
   }
 
   .main__block {
