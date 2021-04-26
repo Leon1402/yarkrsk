@@ -75,6 +75,14 @@ button {cursor: pointer;}
   flex-direction: column;
 }
 
+.header-contacts__link {
+  transition: color .3s ease-out;
+}
+
+.header-contacts__link:hover {
+  color: #fdc619;
+}
+
 .header__block {
   display: flex;
   margin-left: 10px;
@@ -89,6 +97,14 @@ button {cursor: pointer;}
   display: flex;
 }
 
+.header__item {
+  transition: color .3s ease-out;
+}
+
+.header__item:hover {
+  color: #fdc619;
+}
+
 .header__item:not(:last-child) {
   margin-right: 10px;
 }
@@ -96,6 +112,10 @@ button {cursor: pointer;}
 .header__item_catalog {
   font-size: inherit;
   display: none;
+}
+
+.header__item_home {
+  cursor: pointer;
 }
 
 .header__item_link {
@@ -112,7 +132,7 @@ button {cursor: pointer;}
   transform: scaleY(0);
   transform-origin: top;
   box-shadow: 0px 3px 5px 0px;
-
+  color: #333;
   transition: transform .3s ease-out;
 }
 
@@ -123,8 +143,12 @@ button {cursor: pointer;}
 .link {
   display: inline-block;
   padding: 5px;
+  transition: color .3s ease-out;
 }
 
+.link:hover {
+  color: #fdc619;
+}
 
 .hero__container {
   background-image: url(images/page.jpg);
@@ -208,13 +232,13 @@ button {cursor: pointer;}
   padding-right: 20px;
 }
 
-.nav__button_open::after {
+.symbol {
   content: '';
   position: absolute;
   right: 5px;
   top: 8px;
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   border-left: 2px solid #333;
   border-bottom: 2px solid #333;
   transform: rotate(-45deg);
@@ -262,11 +286,10 @@ button {cursor: pointer;}
 
 .home__img {
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .home__text {
-  padding: 10px;
+  padding: 0 10px;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
