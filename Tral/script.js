@@ -64,7 +64,7 @@ for (const item of navButtons) {
     })
 }
 
-const catalog = document.querySelector('.header__item_catalog')
+const catalog = document.querySelector('.header__button_catalog')
 const nav = document.querySelector('.nav');
 
 catalog.addEventListener('click', e => {

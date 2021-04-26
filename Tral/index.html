@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-<title>Аренда техники</title>
-<link rel="stylesheet" href="style.css">
+  <title>Аренда техники</title>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -23,10 +23,9 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item header__item_home">ГЛАВНАЯ</li>
-          <li class="header__item header__item_home">УСЛУГИ</li>
-          <li class="header__item header__item_catalog">
+          <li class="header__item header__item_home">
             <button class="header__button_catalog">
-              КАТАЛОГ
+              УСЛУГИ
             </button>
           </li>
           <li class="header__item header__item_work-type">
@@ -87,10 +86,10 @@
     <div class="container main__container">
       <nav class="main__nav nav">
         <div class="nav__block">
-          <h3 class="nav__title">КАТАЛОГ СПЕЦТЕХНИКИ</h3>
+          <h3 class="nav__title">КАТАЛОГ УСЛУГ</h3>
           <ul class="nav__list">
             <li class="nav__item">
-              <button class="nav__button" data-type="all">ВСЕ</button>
+              <button class="nav__button" data-type="all">ВСЕ УСЛУГИ</button>
             </li>
             <li class="nav__item">
               <button class="nav__button" data-type="all">НЕГАБАРИТ</button>
@@ -112,27 +111,47 @@
       </nav>
       <div class="main__content">
         <section class="home">
-          <div class="oversized__block main__block">
+          <div class="home__block main__block">
             <!-- <h2 class="main__title oversized__title"></h2> -->
-            <p class="oversized__text main__text">
+            <p class="home__text main__text">
               <b>Наша задача</b> - обеспечить безопасную и оперативную перевозку негабаритных и габаритных грузов, вне
               зависимости
               от
               пункта отправления и назначения, а также места нахождения заказчика.
               Предлагаем Вам надежное и взаимовыгодное сотрудничество.
             </p>
-            <p class="oversized__text main__text">
+            <ul class="home__block-list block-list">
+              <li class="block-list__item block-list__item_first">
+                <span class="block-list__text">
+                  ГАРАНТИЯ СРОКА ДОСТАВКИ
+                </span>
+              </li>
+              <li class="block-list__item block-list__item_second">
+                <span class="block-list__text">
+                  ДОСТАВКА ОТ АДРЕСА К АДРЕСУ
+                </span>
+              </li>
+              <li class="block-list__item block-list__item_third">
+                <span class="block-list__text">
+                  СТРАХОВАНИЕ ГРУЗОВ
+                </span>
+              </li>
+              <li class="block-list__item block-list__item_fourth">
+                <span class="block-list__text">
+                  ПОДАЧА МАШИНЫ ТОЧНО В СРОК
+                </span>
+              </li>
+            </ul>
+            <p class="home__text main__text">
               Обращаясь к нам, вы получаете индивидуальный подход, надежную и быструю доставку грузов, приятный сервис и
-              гарантию
-              сохранности груза.
+              гарантию сохранности груза.
             </p>
-            <p class="oversized__text main__text">
+            <p class="home__text main__text">
               Нас ценят наши клиенты за ответственный подход к своей работе.
             </p>
-            <p class="oversized__text main__text">
+            <p class="home__text main__text">
               Команда профессиональных специалистов сообщества «ЯР ХОЛДИНГ» обеспечивает выполнение всех пожеланий
-              клиента и
-              удовлетворение всех его интересов:
+              клиента и удовлетворение всех его интересов:
             </p>
             <ul class="home__list">
               <li class="home__item">ПЕРЕВОЗКА НЕГАБАРИТНЫХ ГРУЗОВ</li>
@@ -141,7 +160,7 @@
               <li class="home__item">СОПРОВОЖДЕНИЕ НЕГАБАРИТНЫХ ГРУЗОВ</li>
               <li class="home__item">УСЛУГИ КРАНА</li>
             </ul>
-            <p class="oversized__text main__text">
+            <p class="home__text main__text">
               Обращаясь к нам, вы получаете индивидуальный подход, надежную и быструю доставку грузов, приятный сервис и
               гарантию
               сохранности груза.
@@ -158,7 +177,8 @@
             </p>
             <p class="oversized__text main__text">
               Транспортировка негабаритных грузов имеет свои особенности. На крупногабаритный груз должно быть оформлено
-              специальное разрешение и подобран специальный маршрут, чтобы не повредить линии электропередач, во избежание
+              специальное разрешение и подобран специальный маршрут, чтобы не повредить линии электропередач, во
+              избежание
               проезда под низкими мостами, на узких дорогах и других препятствий, мешающих движению трала с негабаритным
               грузом.
             </p>
@@ -172,77 +192,87 @@
         </section>
 
         <section class="low-frame section">
-          <h2 class="main__title low-frame__title">ПЕРЕВОЗКА НИЗКОРАМНЫМИ ПЛАТФОРМАМИ</h2>
-          <p class="low-frame__text main__text">
-            Использование низкорамных тралов позволяет без проблем осуществлять погрузку и разгрузку грузов при быстрой
-            и безопасной их транспортировке.
-          </p>
-          <p class="low-frame__text main__text">
-            Низкорамники передвигаются по обычным автотрассам, легко проходят в туннелях и под мостами. Полуприцепы
-            снабжаются надёжными креплениями и тросами, поэтому груз доставляется в полной сохранности.
-          </p>
-          <p class="low-frame__text main__text">
-            Главная особенность полуприцепа — отсутствие кузова с бортами. Платформа с низкой рамой прикрепляется к
-            тягачу. Такая конструкция позволяет фиксировать и перевозить крупные объекты.
-          </p>
-          <a href="tel:+78003330303" class="crane__link main__link">
-            <i class="fas fa-phone"></i>
-          </a>
+          <div class="low-frame__block main__block">
+            <h2 class="main__title low-frame__title">ПЕРЕВОЗКА НИЗКОРАМНЫМИ ПЛАТФОРМАМИ</h2>
+            <p class="low-frame__text main__text">
+              Использование низкорамных тралов позволяет без проблем осуществлять погрузку и разгрузку грузов при
+              быстрой
+              и безопасной их транспортировке.
+            </p>
+            <p class="low-frame__text main__text">
+              Низкорамники передвигаются по обычным автотрассам, легко проходят в туннелях и под мостами. Полуприцепы
+              снабжаются надёжными креплениями и тросами, поэтому груз доставляется в полной сохранности.
+            </p>
+            <p class="low-frame__text main__text">
+              Главная особенность полуприцепа — отсутствие кузова с бортами. Платформа с низкой рамой прикрепляется к
+              тягачу. Такая конструкция позволяет фиксировать и перевозить крупные объекты.
+            </p>
+            <a href="tel:+78003330303" class="crane__link main__link">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
         </section>
 
         <section class="permissions section">
-          <h2 class="main__title permissions__title">ОФОРМЛЕНИЕ РАЗРЕШЕНИЙ</h2>
-          <p class="permissions__text main__text">
-            Оформление разрешений на перевозку негабаритных грузов — необходимое разрешение при высоте груза вместе с
-            прицепом выше 4 метров, массе свыше 38 тонн, длине груза больше 20 метров и ширине свыше 2,55 метра.
-          </p>
-          <p class="permissions__text main__text">
-            Перевозка негабарита — не простая процедура, которая требует соблюдения правил и норм. Без этого даже
-            транспортировка груза на близкие расстояния может обернуться серьёзной проблемой.
-          </p>
-          <p class="permissions__text main__text">
-            Разрешение на транспортировку негабарита позволит обеспечить безопасность груза, водителя и других
-            участников движения. Этот документ можно оформить в нашей компании, что избавит Вас от надобности вникать в
-            тонкости получения разрешений.
-          </p>
-          <a href="tel:+78003330303" class="crane__link main__link">
-            <i class="fas fa-phone"></i>
-          </a>
+          <div class="permissions__block main__block">
+            <h2 class="main__title permissions__title">ОФОРМЛЕНИЕ РАЗРЕШЕНИЙ</h2>
+            <p class="permissions__text main__text">
+              Оформление разрешений на перевозку негабаритных грузов — необходимое разрешение при высоте груза вместе с
+              прицепом выше 4 метров, массе свыше 38 тонн, длине груза больше 20 метров и ширине свыше 2,55 метра.
+            </p>
+            <p class="permissions__text main__text">
+              Перевозка негабарита — не простая процедура, которая требует соблюдения правил и норм. Без этого даже
+              транспортировка груза на близкие расстояния может обернуться серьёзной проблемой.
+            </p>
+            <p class="permissions__text main__text">
+              Разрешение на транспортировку негабарита позволит обеспечить безопасность груза, водителя и других
+              участников движения. Этот документ можно оформить в нашей компании, что избавит Вас от надобности вникать
+              в
+              тонкости получения разрешений.
+            </p>
+            <a href="tel:+78003330303" class="crane__link main__link">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
         </section>
 
         <section class="support section">
-          <h2 class="main__title support__title">СОПРОВОЖДЕНИЕ НЕГАБАРИТНЫХ ГРУЗОВ</h2>
-          <p class="support__text main__text">
-            Перевозка объектов, которые входят в категорию так называемого негабарита, всегда сопряжена с трудностями.
-            Оказание услуги сопровождения негабаритных грузов позволит обеспечить безопасное следование сверхтяжёлых и
-            крупноразмерных объектов вне зависимости от протяжённости маршрута и дорожной обстановки на нём.
-          </p>
-          <p class="support__text main__text">
-            Обеспечим безопасность следования негабарита. Мы профессионально подходим к сопровождению негабаритных
-            грузов разных видов. Любой объект, насколько большим и тяжёлым он ни был, будет доставлен до места
-            назначения безопасно и в срок.
-          </p>
-          <a href="tel:+78003330303" class="crane__link main__link">
-            <i class="fas fa-phone"></i>
-          </a>
+          <div class="support__block main__block">
+            <h2 class="main__title support__title">СОПРОВОЖДЕНИЕ НЕГАБАРИТНЫХ ГРУЗОВ</h2>
+            <p class="support__text main__text">
+              Перевозка объектов, которые входят в категорию так называемого негабарита, всегда сопряжена с трудностями.
+              Оказание услуги сопровождения негабаритных грузов позволит обеспечить безопасное следование сверхтяжёлых и
+              крупноразмерных объектов вне зависимости от протяжённости маршрута и дорожной обстановки на нём.
+            </p>
+            <p class="support__text main__text">
+              Обеспечим безопасность следования негабарита. Мы профессионально подходим к сопровождению негабаритных
+              грузов разных видов. Любой объект, насколько большим и тяжёлым он ни был, будет доставлен до места
+              назначения безопасно и в срок.
+            </p>
+            <a href="tel:+78003330303" class="crane__link main__link">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
         </section>
 
         <section class="crane section">
-          <h2 class="main__titlecrane__title">СОПРОВОЖДЕНИЕ НЕГАБАРИТНЫХ ГРУЗОВ</h2>
-          <p class="crane__text main__text">
-            Для транспортировки груза часто требуется кран для поднятия крупногабаритных, тяжёлых грузов. Обычно
-            погрузочно-разгрузочные работы осуществляются силами заказчика и грузополучателя, но бывает ситуации когда
-            такой возможности нет.
-          </p>
-          <p class="crane__text main__text">
-            Сообщество «ЯР ХОЛДИНГ» может предложить услуги автокрана по доступной стоимости.
-          </p>
-          <p class="crane__text main__text">
-            Мы погрузим груз на трал, доставим в пункт назначения и при необходимости, разгрузим его там.
-          </p>
-          <a href="tel:+78003330303" class="crane__link main__link">
-            <i class="fas fa-phone"></i>
-          </a>
+          <div class="crane__block main__block">
+            <h2 class="main__titlecrane__title">СОПРОВОЖДЕНИЕ НЕГАБАРИТНЫХ ГРУЗОВ</h2>
+            <p class="crane__text main__text">
+              Для транспортировки груза часто требуется кран для поднятия крупногабаритных, тяжёлых грузов. Обычно
+              погрузочно-разгрузочные работы осуществляются силами заказчика и грузополучателя, но бывает ситуации когда
+              такой возможности нет.
+            </p>
+            <p class="crane__text main__text">
+              Сообщество «ЯР ХОЛДИНГ» может предложить услуги автокрана по доступной стоимости.
+            </p>
+            <p class="crane__text main__text">
+              Мы погрузим груз на трал, доставим в пункт назначения и при необходимости, разгрузим его там.
+            </p>
+            <a href="tel:+78003330303" class="crane__link main__link">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
         </section>
 
         <section class="form-section">
