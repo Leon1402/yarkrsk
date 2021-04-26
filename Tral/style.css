@@ -90,7 +90,7 @@ button {cursor: pointer;}
 }
 
 .header__title {
-  max-width: 130px;
+  max-width: 170px;
   margin: 0;
 }
 
@@ -115,6 +115,7 @@ button {cursor: pointer;}
 
 .link__list {
   position: absolute;
+  width: 200px;
   top: calc(100% + 5px);
   background-color: #fff;
   transform: scaleY(0);
@@ -252,7 +253,9 @@ button {cursor: pointer;}
   border-radius: 50%;
 }
 
-.home__block {
+.home {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 250px;
   background-image: url(images/home.jpg);
   background-position: center bottom;
@@ -429,13 +432,50 @@ button {cursor: pointer;}
   text-decoration: underline;
 }
 
+.cargo {
+  background-image: url(images/cargo.png);
+  background-position: center bottom;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  padding-bottom: 250px;
+}
+
+.cargo__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cargo__row {
+  flex: 0 0 50%;
+  margin-bottom: 10px;
+}
+
+.cargo-row__title {
+  position: relative;
+  margin-top: 0;
+  padding-left: 30px;
+  color: #fdc619;
+  font-size: 15px;
+}
+
+.cargo-row__title::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/star.png);
+  background-size: contain;
+}
+
 @media screen and (max-width: 1024px) {
 
 }
 
 @media screen and (max-width: 768px) {
   body {
-    margin-top: 100px;
+    margin-top: 118px;
   }
 
   .main__container {
@@ -455,6 +495,7 @@ button {cursor: pointer;}
   }
 
   .header__title {
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
@@ -499,17 +540,28 @@ button {cursor: pointer;}
     display: inline;
   }
 
-  .section,
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .home {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 
 @media screen and (max-width: 425px) {
+  body {
+    margin-top: 93px;
+  }
+
   .header__list {
     font-size: 12px;
+  }
+  
+  .header__title {
+    font-size: 16px;  
   }
 
   .header__item:not(:last-child) {
@@ -524,6 +576,11 @@ button {cursor: pointer;}
   .main__title {
     width: 90%;
     font-size: 12px;
+  }
+
+  .cargo {
+    padding-bottom: 200px; ;
+    background-size: 300px;
   }
 
   .main__block {
