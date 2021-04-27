@@ -30,37 +30,50 @@ for (const item of openButtons) {
 }
 
 const linkMenu = document.querySelector('.header__item_link');
+
 const linkList = document.querySelector('.link__list')
 
 const navButtons = document.querySelectorAll('.nav__button');
-const cars = document.querySelector('.cars')
+const imgButtons = document.querySelectorAll('.equipment__item')
 
-for (const item of navButtons) {
-    item.addEventListener('click', e => {
-        for (let item of navButtons) {
-            item.classList.remove('nav__button_active');
+const cars = document.querySelector('.cars');
+
+const openCars =  (e, i) => {
+    for (let item of navButtons) {
+        item.classList.remove('nav__button_active');
+    }
+    navButtons[i].classList.add('nav__button_active');
+
+    const carsList = document.querySelectorAll('.cars__item')
+
+    if (e.currentTarget.dataset.type != 'all') {
+        for (const car of carsList) {
+            car.style.display = 'none'
         }
-        e.currentTarget.classList.add('nav__button_active');
-
-        const carsList = document.querySelectorAll('.cars__item')
-
-        if (e.currentTarget.dataset.type != 'all') {
-            for (const car of carsList) {
-                car.style.display = 'none'
-            }
-            document.querySelectorAll(`[data-${e.currentTarget.dataset.type}]`).forEach(item => {
-                item.style.display = 'flex'
-            })
-        } else {
-            for (const car of carsList) {
-                car.style.display = 'flex'
-            }
+        document.querySelectorAll(`[data-${e.currentTarget.dataset.type}]`).forEach(item => {
+            item.style.display = 'flex'
+        })
+    } else {
+        for (const car of carsList) {
+            car.style.display = 'flex'
         }
-        document.querySelectorAll('.section').forEach((item) => {
-            item.style.display = 'none';
-        });
-        
-        cars.style.display = 'flex';
+    }
+    document.querySelectorAll('.section').forEach((item) => {
+        item.style.display = 'none';
+    });
+    
+    cars.style.display = 'flex';
+}
+
+for (let i = 0; i < navButtons.length; i++) {
+    navButtons[i].addEventListener('click', (e) => {
+        openCars(e, i)
+    })
+}
+
+for (let i = 0; i < imgButtons.length; i++) {
+    imgButtons[i].addEventListener('click', (e) => {
+        openCars(e, i)
     })
 }
 
@@ -86,6 +99,10 @@ const home = document.querySelector('.header__item_home')
 
 home.addEventListener('click', () => {
     cars.style.display = 'none';
+    
+    for (let item of navButtons) {
+        item.classList.remove('nav__button_active');
+    }
 
     document.querySelectorAll('.section').forEach((item) => {
         item.style.display = 'flex';

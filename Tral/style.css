@@ -125,6 +125,10 @@ button {cursor: pointer;}
   transition: transform .3s ease-out;
 }
 
+.header__item_work-type {
+  cursor: pointer;
+}
+
 .header__item_link:hover .link__list {
   transform: scaleY(1);
 }
@@ -142,7 +146,7 @@ button {cursor: pointer;}
 }
 
 .hero__block {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .hero__title {
@@ -272,10 +276,8 @@ button {cursor: pointer;}
 
 .block-list__item {
   width: 49%;
-  background-color: #fdc619;
-  border: 2px solid #fdc619;
   background-position: right center;
-  background-size: 50px;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -295,25 +297,6 @@ button {cursor: pointer;}
   width: 75%;
   height: 100%;
   padding: 10px 5px;
-  background-color: #fff;
-}
-
-.block-list__text::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -20px;
-  border: 20px solid transparent;
-  border-top: 30px solid #fff; 
-}
-
-.block-list__text::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: -20px;
-  border: 20px solid transparent;
-  border-bottom: 30px solid #fff; 
 }
 
 .main__content {
@@ -343,7 +326,7 @@ button {cursor: pointer;}
   list-style-position: inside;
 }
 
-.home__item {
+.home__button {
   padding: 10px;
   padding-left: 0;
 }
@@ -390,6 +373,10 @@ button {cursor: pointer;}
   flex-direction: column;
 }
 
+.form__title {
+  margin: 10px 0;
+}
+
 .form__label {
   display: flex;
   flex-direction: column;
@@ -409,7 +396,7 @@ button {cursor: pointer;}
 }
 
 .footer {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -431,6 +418,10 @@ button {cursor: pointer;}
 .home-link {
   font-size: 20px;
   text-decoration: underline;
+}
+
+.cargo {
+  display: none;
 }
 
 .cargo__block {
@@ -461,7 +452,7 @@ button {cursor: pointer;}
 }
 
 .cargo__row:nth-child(2n-1) {
-  margin-right: 4%;
+  margin-right: 3%;
 }
 
 .cargo-row__title {

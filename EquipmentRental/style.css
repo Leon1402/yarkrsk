@@ -290,6 +290,7 @@ button {cursor: pointer;}
 
 .home__text {
   padding: 0 10px;
+  margin-bottom: 0;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -307,7 +308,10 @@ button {cursor: pointer;}
 .cars__list {
   display: flex;
   flex-wrap: wrap;
+}
 
+.equipment__text {
+  margin-bottom: 0;
 }
 
 .cars__item {
@@ -368,7 +372,6 @@ button {cursor: pointer;}
   flex-wrap: wrap;
   justify-content: space-around;
   border-top: 1px solid #ccc;
-  padding: 10px;
 }
 
 .form {
@@ -424,6 +427,7 @@ button {cursor: pointer;}
 .equipment__item {
   flex: 0 0 22%;
   text-align: center;
+  cursor: pointer;
 }
 
 .equipment__img {
@@ -450,7 +454,11 @@ button {cursor: pointer;}
 
 .worktype-row {
   flex: 50%;
-  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.worktype-row__title {
+  margin-top: 0;
 }
 
 .worktype__row_second {
