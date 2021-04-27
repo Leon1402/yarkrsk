@@ -140,6 +140,10 @@ button {cursor: pointer;}
   transform: scaleY(1);
 }
 
+.header__item_work-type {
+  cursor: pointer;
+}
+
 .link {
   display: inline-block;
   padding: 5px;
@@ -447,6 +451,10 @@ button {cursor: pointer;}
   text-decoration: underline;
 }
 
+.worktype {
+  display: none;
+}
+
 .worktype__container {
   display: flex;
   flex-wrap: wrap;
@@ -609,7 +617,6 @@ button {cursor: pointer;}
     display: block;
     transform: scaleX(1);
   }
-
   
   .header__item_catalog {
     display: inline;

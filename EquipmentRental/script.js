@@ -96,6 +96,7 @@ window.addEventListener('click', e => {
 })
 
 const home = document.querySelector('.header__item_home')
+const work = document.querySelector('.header__item_work-type')
 
 home.addEventListener('click', () => {
     cars.style.display = 'none';
@@ -104,9 +105,21 @@ home.addEventListener('click', () => {
         item.classList.remove('nav__button_active');
     }
 
-    document.querySelectorAll('.section').forEach((item) => {
-        item.style.display = 'flex';
-    })
+    document.querySelector('.worktype ').style.display = 'none';
+    document.querySelector('.equipment').style.display = 'flex';
+    document.querySelector('.home ').style.display = 'flex';
+})
+
+work.addEventListener('click', () => {
+    cars.style.display = 'none';
+    
+    for (let item of navButtons) {
+        item.classList.remove('nav__button_active');
+    }
+
+    document.querySelector('.worktype').style.display = 'flex';
+    document.querySelector('.equipment').style.display = 'none';
+    document.querySelector('.home ').style.display = 'none';
 })
 
 const buttons = document.querySelectorAll('.cars__button_order');
