@@ -237,7 +237,7 @@
             </ul>
           </div>
         </div>
-        <form class="callus__row form">
+        <form class="callus__row form" action="mail.php" method="POST">
           <h3 class="form__title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h3>
           <label class="form__label">
             Ваши ФИО*
@@ -247,6 +247,7 @@
             Ваш телефон*
             <input type="tel" class="form__input" required>
           </label>
+          <input type="text" name="location" style="display: none;">
           <button type="submit" class="form__button">ОТПРАВИТЬ</button>
         </form>
       </div>
