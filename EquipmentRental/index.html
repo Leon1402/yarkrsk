@@ -56,6 +56,9 @@
                 <a href="" class="link">УСЛУГИ ГЕНПОДРЯДА</a>
               </li>
               <li class="link__item">
+                <a href="" class="link">СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</a>
+              </li>
+              <li class="link__item">
                 <a href="" class="link">БАНКОВСКАЯ ГАРАНТИЯ</a>
               </li>
             </ul>
@@ -651,16 +654,17 @@
               </li>
             </ul>
           </div>
-          <form class="form-section__row form">
+          <form class="form-section__row form" action="mail.php" method="POST">
             <h3 class="form__title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h3>
             <label class="form__label">
               ФИО
-              <input type="text" class="form__input" placeholder="ФИО">
+              <input type="text" name="name" class="form__input" placeholder="ФИО">
             </label>
             <label class="form__label">
               Телефон
-              <input type="tel" class="form__input" placeholder="Телефон">
+              <input type="tel" name="phone" class="form__input" placeholder="Телефон">
             </label>
+            <input type="text" name="car" style="display: none;">
             <button class="form__button">ОТПРАВИТЬ</button>
           </form>
         </section>
@@ -669,22 +673,29 @@
   </main>
 
   <div class="modal-arend">
-    <form class="modal-arend__content">
+    <form class="modal-arend__content" action="mail.php" method="POST">
       <label class="modal-arend__label">
         ТЕХНИКА
-        <input type="text" class="modal-arend__input modal-arend__input_car" disabled>
+        <input type="text" name="car" class="modal-arend__input modal-arend__input_car" disabled>
       </label>
       <label class="modal-arend__label">
         ФИО*
-        <input type="text" class="modal-arend__input" required>
+        <input type="text" name="name" class="modal-arend__input" required>
       </label>
       <label class="modal-arend__label">
         ТЕЛЕФОН
-        <input type="tel" class="modal-arend__input" required>
+        <input type="tel" name="phone" class="modal-arend__input" required>
       </label>
       <button class="modal-arend__submit">ЗАКАЗАТЬ</button>
       <button class="modal-arend__close">X</button>
     </form>
+  </div>
+
+  <div class="modal-more">
+    <div class="modal-more__content">
+      <button class="modal-more__close">X</button>
+      <div class="more__text-block"></div>
+    </div>
   </div>
 
   <footer class="footer">

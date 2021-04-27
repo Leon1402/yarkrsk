@@ -454,8 +454,19 @@ button {cursor: pointer;}
 }
 
 .worktype__row_second {
+  position: relative;
   padding: 20px;
-  border-left: 1px solid #ccc;
+}
+
+.worktype__row_second::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 72%;
+  background-color: #ccc;
 }
 
 .worktype-row__list {
@@ -474,11 +485,8 @@ button {cursor: pointer;}
   border-radius: 50%;
 }
 
-.worktype-row__text {
-  font-size: 12px;
-}
-
-.modal-arend {
+.modal-arend,
+.modal-more {
   position: fixed;
   top: 0;
   left: 0;
@@ -491,18 +499,34 @@ button {cursor: pointer;}
   z-index: 1000;
 }
 
-.modal-arend_active {
+.modal-arend_active,
+.modal-more_active {
   display: flex;
 }
 
-.modal-arend__content {
+.modal-arend__content,
+.modal-more__content {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 500px;
+  height: 100%;
+  max-height: 500px;
   padding: 30px 20px;
   background-color: #fff;
+  background-repeat: no-repeat;
+}
+
+.modal-arend__content {
+  background-image: url(images/spec.png);
+  background-size: 90%;
+  background-position: center 350px;
+}
+
+.modal-more__content {
+  background-image: url(images/form.png);
+  background-size: 80%;
+  background-position: center bottom;
 }
 
 .modal-arend__label {
@@ -524,7 +548,8 @@ button {cursor: pointer;}
   border-radius: 20px;
 }
 
-.modal-arend__close {
+.modal-arend__close,
+.modal-more__close {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -537,8 +562,8 @@ button {cursor: pointer;}
     flex-direction: column;
   }
 
-  .worktype__row_second {
-    border: none;
+  .worktype__row_second::before {
+    display: none;
   }
 
   .cars__buttons {
@@ -676,5 +701,10 @@ button {cursor: pointer;}
   
   .equipment__item {
     flex: 0 0 45%;
+  }
+  
+  .modal-arend__content,
+  .modal-more__content {
+    max-width: 400px;
   }
 }

@@ -120,3 +120,44 @@ document.querySelector('.modal-arend__close').addEventListener('click', e => {
     form.reset();
     modal.classList.remove('modal-arend_active');
 })
+
+const moreButtons = document.querySelectorAll('.cars__button_more');
+const modalArend = document.querySelector('.modal-more');
+const modalArendContent = document.querySelector('.modal-more__content');
+const textBlock = document.querySelector('.more__text-block')
+
+document.querySelector('.modal-more__close').addEventListener('click', e => {
+    modalArend.classList.remove('modal-more_active');
+    textBlock.innerHTML = '';
+})
+
+modalArend.addEventListener('click', e => {
+    if (!e._isModalClicked) {
+        modalArend.classList.remove('modal-more_active');
+        textBlock.innerHTML = '';
+    }
+})
+
+modalArendContent.addEventListener('click', e => {
+    e._isModalClicked = true
+})
+
+for (let i = 0; i < moreButtons.length; i++) {
+    moreButtons[i].addEventListener('click', e => {
+        let request = new XMLHttpRequest();
+        request.open("GET", "more.json", true);
+        request.responseType = 'json';
+        request.send(); 
+        request.onload = function() {
+            const data = request.response[i]
+            for (const item of Object.keys(data)) {
+                const p = document.createElement('p')
+                p.classList.add('modal-more__text')
+
+                p.textContent = item + " : " + data[item];
+                textBlock.append(p);
+            }
+          }
+        modalArend.classList.add('modal-more_active')
+    });
+}
